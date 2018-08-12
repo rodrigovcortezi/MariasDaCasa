@@ -39,6 +39,14 @@ nav {
   background-color: #f7d0cb;
 }
 
+nav > ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: inherit;
+}
+
 nav li > a {
   color: #313131;
   text-decoration: none;
@@ -50,10 +58,6 @@ nav li > a:hover {
 
 nav li > a:focus {
   outline: none;
-}
-
-nav > ul {
-  display: none;
 }
 
 nav .menu-icon {
@@ -78,9 +82,6 @@ nav .menu-icon {
 
   nav > ul {
     display: inline-flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }
 
   nav li {
