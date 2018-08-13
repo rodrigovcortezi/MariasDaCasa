@@ -33,14 +33,24 @@ nav {
   margin: 0;
   width: 100%;
   height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #f7d0cb;
+  transition: height 0.7s ease;
+  overflow: hidden;
+}
+
+nav .nav-controls {
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header.nav-container {
+  transition: height 0.7s ease;
 }
 
 nav > ul {
-  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -72,14 +82,25 @@ nav li > a:focus {
     padding-right: 40px;
   }
 
+  nav li {
+    margin-top: 40px;
+  }
+
   #menu-icon {
     display: inline;
   }
 }
 @media screen and (min-width: 768px) {
   nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
+  }
+
+  nav .nav-controls {
+    width: auto;
   }
 
   nav > ul {
