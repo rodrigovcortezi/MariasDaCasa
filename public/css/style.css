@@ -30,12 +30,15 @@ body {
 }
 
 nav {
+  position: fixed;
+  top: 0;
   margin: 0;
   width: 100%;
   height: 60px;
   background-color: #f7d0cb;
   transition: height 0.7s ease;
   overflow: hidden;
+  z-index: 1;
 }
 
 nav .nav-controls {
@@ -125,6 +128,24 @@ nav li > a:focus {
 
   nav li {
     margin-left: 40px;
+  }
+}
+.hero {
+  background-image: url("../images/apartment.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-position: 80% 50%;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 700px;
   }
 }
 
