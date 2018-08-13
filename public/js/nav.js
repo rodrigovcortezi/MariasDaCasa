@@ -1,11 +1,12 @@
 var buttonActive = false;
 const menuButton = document.getElementById('menu-icon');
+const nav = document.getElementsByTagName('nav')[0];
+const navHeight = window.getComputedStyle(nav, null).height;
 menuButton.addEventListener('click', function() {
     const header = document.getElementsByTagName('header')[0];
-    const nav = document.getElementsByTagName('nav')[0];
     if(buttonActive) {
-	nav.style.height = '60px'
-	header.style.height = '60px';
+	nav.style.height = navHeight; 
+	header.style.height = navHeight;
     } else {
 	header.style.height = '100%';
 	nav.style.height = '100%';
