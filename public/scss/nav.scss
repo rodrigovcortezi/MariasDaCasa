@@ -21,6 +21,8 @@ nav > ul {
 }
 
 nav li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: $nav-link-color;
     text-decoration: none;
 }
@@ -37,6 +39,9 @@ nav li > a:focus {
     display: none;
 }
 
+//
+// Mobile
+//
 @media screen and (max-width: 767px) {
     nav {
 	padding-left: 40px;
@@ -48,6 +53,9 @@ nav li > a:focus {
     }
 }
 
+//
+// Desktop
+//
 @media screen and (min-width: 768px) {
 
     nav {
@@ -60,7 +68,7 @@ nav li > a:focus {
     }
 
     nav li {
-	margin: 15px;
+	margin-left: 40px;
     }
 
 }

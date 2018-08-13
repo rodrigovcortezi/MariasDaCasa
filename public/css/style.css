@@ -48,6 +48,8 @@ nav > ul {
 }
 
 nav li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #313131;
   text-decoration: none;
 }
@@ -85,7 +87,7 @@ nav li > a:focus {
   }
 
   nav li {
-    margin: 15px;
+    margin-left: 40px;
   }
 }
 
