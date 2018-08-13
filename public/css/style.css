@@ -60,7 +60,7 @@ nav li > a:focus {
   outline: none;
 }
 
-nav .menu-icon {
+#menu-icon {
   display: none;
 }
 
@@ -70,7 +70,7 @@ nav .menu-icon {
     padding-right: 40px;
   }
 
-  nav .menu-icon {
+  #menu-icon {
     display: inline;
   }
 }
