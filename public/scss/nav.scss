@@ -1,6 +1,7 @@
 $nav-background-color: $global-primary-background !default;
 $nav-link-color: $global-color !default;
 $nav-link-hover-color: lighten($nav-link-color, 15%) !default;
+$nav-height: 60px !default;
 $nav-horizontal-separator: 1px solid $global-color !default;
 
 nav {
@@ -8,7 +9,7 @@ nav {
     top: 0;
     margin: 0;
     width: 100%;
-    height: 60px;
+    height: $nav-height;
     background-color: $nav-background-color;
     transition: height 0.7s ease;
     overflow: hidden;
@@ -16,7 +17,7 @@ nav {
 }
 
 nav .nav-controls {
-    height: 60px;
+    height: $nav-height;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;

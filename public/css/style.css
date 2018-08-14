@@ -131,6 +131,7 @@ nav li > a:focus {
   }
 }
 .hero {
+  margin-top: 60px;
   background-image: url("../images/apartment.jpg");
   background-size: cover;
   background-position: center;
