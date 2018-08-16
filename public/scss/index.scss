@@ -25,8 +25,18 @@
     }
 
     .hero-bottom {
+	display: flex;
+	align-items: center;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
+
+	.select-service {
+	    width: 40%;
+	}
+
+	.select-location {
+	    width: 40%;
+	}
     }
 
     //
