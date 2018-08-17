@@ -33,6 +33,8 @@ body {
 .container {
     padding: 0 15px;
     margin: 0 auto;
+    min-width: 510px;
+    max-width: 960px;
     //
     // Mobile
     //
