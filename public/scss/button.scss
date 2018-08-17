@@ -1,0 +1,57 @@
+$button-padding-horizontal: $global-gutter !default;
+$button-font-size: $global-font-size !default;
+$button-line-height: $global-control-height !default;
+$button-border-radius: $global-control-border-radius !default;
+$button-primary-background: $global-primary-background !default;
+$button-primary-color: $global-color !default;
+
+button {
+    margin: 0;
+    border: none;
+    border-radius: $button-border-radius;
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 $button-padding-horizontal;
+    vertical-align: middle;
+    font-size: $button-font-size;
+    line-height: $button-line-height;
+    text-align: center;
+    text-decoration: none;
+    transition:	0.1s ease-in-out;
+    transition-property: color, background-color, border-color;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+/*
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*
+ * Primary
+ */
+
+button.button-primary {
+    background-color: $button-primary-background;
+    color: $button-primary-color;
+}
+

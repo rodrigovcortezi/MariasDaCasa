@@ -3,6 +3,7 @@ $form-height: $global-control-height !default;
 $form-background: $global-background !default;
 $form-color: $global-color !default;
 $form-border: $global-border !default;
+$form-border-radius: $global-control-border-radius !default;
 $form-border-width: $global-border-width !default;
 $form-select-padding-right: 20px !default;
 $form-select-icon-color: $global-color !default;
@@ -10,7 +11,7 @@ $form-select-icon-color: $global-color !default;
 select {
     box-sizing: border-box;
     margin: 0;
-    border-radius: 5px;
+    border-radius: $form-border-radius;
     text-transform: none;
     font: inherit;
     max-width: 100%;
