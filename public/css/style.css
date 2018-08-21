@@ -29,22 +29,23 @@ body {
   font-size: 1rem;
 }
 
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
 @media screen and (max-width: 767px) {
   .container {
-    width: 510px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 510px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 991px) {
   .container {
     width: 960px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -251,38 +252,147 @@ button.button-primary {
   color: #f9fafc;
 }
 .index-page .hero-bottom {
-  display: flex;
-  align-items: center;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.index-page .hero-bottom .select-service {
-  width: 40%;
+.index-page .hero-bottom > .container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-.index-page .hero-bottom .select-location {
-  width: 40%;
+.index-page .about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.index-page .about h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.index-page .about-table {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.index-page .about-item {
+  text-align: center;
+  width: 33%;
+  padding: 15px;
+  border-radius: 5px;
+}
+.index-page .about-item p {
+  line-height: 24px;
+}
+.index-page .circle {
+  display: block;
+  margin: 0 auto;
+  background-color: #EFF0F2;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 70px;
+}
+.index-page #quality-card {
+  background-image: url("../icons/quality.svg");
+}
+.index-page #staff-card {
+  background-image: url("../icons/staff.svg");
+}
+.index-page #contact-card {
+  background-image: url("../icons/call-answer.svg");
+}
+.index-page .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index-page .title-border {
+  width: 70px;
+  height: 4px;
+  background-color: #f7d0cb;
 }
 @media screen and (max-width: 767px) {
   .index-page .hero {
     background-position: 85% 50%;
-    height: 400px;
+    height: 550px;
   }
   .index-page .hero-main h1 {
     font-size: 1.5rem;
   }
   .index-page .hero-bottom {
-    height: 100px;
+    height: 185px;
+    padding-bottom: 10px;
+  }
+  .index-page .hero-bottom select {
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  .index-page .hero-bottom > .container {
+    flex-direction: column;
+  }
+  .index-page .about-table {
+    flex-direction: column;
+    align-items: center;
+  }
+  .index-page .circle {
+    width: 120px;
+    height: 120px;
+  }
+  .index-page .about-item {
+    width: 70%;
+    margin: 0;
+    margin-bottom: 15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
   .index-page .hero {
-    height: 600px;
+    height: 650px;
+  }
+  .index-page .hero-bottom {
+    height: 150px;
+  }
+  .index-page .hero-main h1 {
+    font-size: 2.5rem;
+  }
+  .index-page .hero-bottom select {
+    margin-right: 5px;
+    width: 272px;
+  }
+  .index-page .hero-bottom button {
+    width: 136px;
+  }
+  .index-page .circle {
+    width: 140px;
+    height: 140px;
+  }
+  .index-page .about-item:not(:first-child) {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .index-page .hero {
+    height: 650px;
   }
   .index-page .hero-main h1 {
     font-size: 2.5rem;
   }
   .index-page .hero-bottom {
     height: 150px;
+  }
+  .index-page .hero-bottom select {
+    margin-right: 5px;
+    width: 368px;
+  }
+  .index-page .hero-bottom button {
+    width: 184px;
+  }
+  .index-page .circle {
+    width: 160px;
+    height: 160px;
+  }
+  .index-page .about-item:not(:first-child) {
+    margin-left: 20px;
   }
 }
 
