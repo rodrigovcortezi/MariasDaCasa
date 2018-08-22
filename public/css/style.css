@@ -230,6 +230,16 @@ button.button-primary {
   color: #313131;
 }
 
+.index-page .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index-page .title-border {
+  width: 70px;
+  height: 4px;
+  background-color: #f7d0cb;
+}
 .index-page .hero {
   display: flex;
   flex-direction: column;
@@ -300,16 +310,6 @@ button.button-primary {
 }
 .index-page #contact-card {
   background-image: url("../icons/call-answer.svg");
-}
-.index-page .section-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.index-page .title-border {
-  width: 70px;
-  height: 4px;
-  background-color: #f7d0cb;
 }
 @media screen and (max-width: 767px) {
   .index-page .hero {

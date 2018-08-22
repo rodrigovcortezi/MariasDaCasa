@@ -1,4 +1,25 @@
 .index-page {
+
+    //
+    // Common
+    //
+
+    .section-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    }
+
+    .title-border {
+	width: 70px;
+	height: 4px;
+	background-color: $global-primary-background;
+    }
+
+    //
+    // Hero
+    //
+
     .hero {
 	display: flex;
 	flex-direction: column;
@@ -37,6 +58,10 @@
 	align-items: center;
 	justify-content: center;
     }
+
+    //
+    // About
+    //
 
     .about {
 	padding-top: 50px;
@@ -86,22 +111,16 @@
     #contact-card {
 	background-image: url('../icons/call-answer.svg');
     }
-    .section-title {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    }
-
-    .title-border {
-	width: 70px;
-	height: 4px;
-	background-color: $global-primary-background;
-    }
 
     //
     // Mobile
     //
     @media screen and (max-width: 767px) {
+
+	//
+	// Hero
+	//
+
 	.hero {
 	    background-position: 85% 50%;
 	    height: 550px;
@@ -126,6 +145,10 @@
 	    flex-direction: column;
 	}
 
+	//
+	// About
+	//
+
 	.about-table {
 	    flex-direction: column;
 	    align-items: center;
@@ -143,7 +166,15 @@
 	}
     }
 
+    //
+    // Tablet
+    //
     @media screen and (min-width: 768px) and (max-width: 990px) {
+
+	//
+	// Hero
+	//
+
 	.hero {
 	    height: 650px;
 	}
@@ -165,6 +196,10 @@
 	    width: 136px;
 	}
 
+	//
+	// About
+	//
+
 	.circle {
 	    width: 140px;
 	    height: 140px;
@@ -179,6 +214,11 @@
     // Desktop
     //
     @media screen and (min-width: 991px) {
+
+	//
+	// Hero
+	//
+
 	.hero {
 	    height: 650px;
 	}
@@ -199,6 +239,10 @@
 	.hero-bottom button {
 	    width: 184px;
 	}
+
+	//
+	// About
+	//
 
 	.circle {
 	    width: 160px;
