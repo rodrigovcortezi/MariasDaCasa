@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-header, section, article, nav, div {
+header, section, article, nav, div, footer {
   box-sizing: border-box;
 }
 
@@ -332,6 +332,11 @@ button.button-primary {
 }
 .index-page .service-item img {
   margin-bottom: 10px;
+}
+.index-page footer {
+  height: 300px;
+  margin-top: 150px;
+  background-color: #f7d0cb;
 }
 @media screen and (max-width: 767px) {
   .index-page .hero {
