@@ -230,10 +230,18 @@ button.button-primary {
   color: #313131;
 }
 
+.index-page section {
+  padding-top: 50px;
+}
 .index-page .section-title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 35px;
+}
+.index-page .section-title h2 {
+  text-align: center;
+  margin-bottom: 5px;
 }
 .index-page .title-border {
   width: 70px;
@@ -272,23 +280,14 @@ button.button-primary {
   align-items: center;
   justify-content: center;
 }
-.index-page .about {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.index-page .section-title h2 {
-  text-align: center;
-  margin-bottom: 5px;
-}
 .index-page .about-table {
-  margin-top: 20px;
   display: flex;
   flex-direction: row;
 }
 .index-page .about-item {
   text-align: center;
   width: 33%;
-  padding: 15px;
+  padding: 0px 15px 15px 15px;
 }
 .index-page .about-item p {
   line-height: 24px;
@@ -310,6 +309,29 @@ button.button-primary {
 }
 .index-page #contact-card {
   background-image: url("../icons/call-answer.svg");
+}
+.index-page .service-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.index-page .service-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.12rem;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3e4e6;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.index-page .service-item img {
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .index-page .hero {
