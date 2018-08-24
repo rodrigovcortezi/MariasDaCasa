@@ -150,13 +150,9 @@ nav li > a:focus {
     margin-left: 40px;
   }
 }
-select {
-  box-sizing: border-box;
-  margin: 0;
-  border-radius: 5px;
-  text-transform: none;
-  font: inherit;
+input, select, textarea {
   max-width: 100%;
+  width: 100%;
   border: 0 none;
   padding: 0 10px;
   background: #f9fafc;
@@ -166,6 +162,39 @@ select {
   transition-property: color, background-color, border;
 }
 
+input, select, textarea {
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 5px;
+  font: inherit;
+}
+
+input, select:not([multiple]):not([size]) {
+  height: 40px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+input::moz-placeholder, textarea::moz-placeholder {
+  opacity: 1;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #313131 !important;
+}
+
+input::placeholder, textarea:placeholder {
+  color: #313131;
+}
+
+select {
+  text-transform: none;
+}
+
 select:not([multiple]):not([size]) {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -173,13 +202,29 @@ select:not([multiple]):not([size]) {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  height: 40px;
-  vertical-align: middle;
-  display: inline-block;
 }
 
 select optgroup {
   font-weight: bold;
+}
+
+input {
+  overflow: visible;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  vertical-align: top;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  background-color: #f9fafc;
+  color: #313131;
+  border-color: #f7d0cb;
 }
 
 button {
@@ -333,6 +378,17 @@ button.button-primary {
 .index-page .service-item img {
   margin-bottom: 10px;
 }
+.index-page form.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.index-page form.contact-form > textarea {
+  height: 200px;
+}
+.index-page .form-component {
+  margin: 5px;
+}
 .index-page footer {
   height: 300px;
   margin-top: 150px;
@@ -395,6 +451,18 @@ button.button-primary {
   .index-page .about-item:not(:first-child) {
     margin-left: 15px;
   }
+  .index-page #name-input {
+    width: 335px;
+  }
+  .index-page #email-input {
+    width: 335px;
+  }
+  .index-page #phone-number-input {
+    width: 335px;
+  }
+  .index-page #city-input {
+    width: 335px;
+  }
 }
 @media screen and (min-width: 991px) {
   .index-page .hero {
@@ -419,6 +487,18 @@ button.button-primary {
   }
   .index-page .about-item:not(:first-child) {
     margin-left: 20px;
+  }
+  .index-page #name-input {
+    width: 455px;
+  }
+  .index-page #email-input {
+    width: 455px;
+  }
+  .index-page #phone-number-input {
+    width: 455px;
+  }
+  .index-page #city-input {
+    width: 455px;
   }
 }
 

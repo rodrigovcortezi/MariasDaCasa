@@ -141,6 +141,24 @@
     }
 
     //
+    // Contact
+    //
+
+    form.contact-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    }
+
+    form.contact-form > textarea {
+	height: 200px;
+    }
+
+    .form-component {
+	margin: 5px;
+    }
+
+    //
     // Footer
     //
 
@@ -246,6 +264,26 @@
 	.about-item:not(:first-child) {
 	    margin-left: 15px;
 	}
+
+	//
+	// Contact
+	//
+
+	#name-input {
+	    width: 335px;
+	}
+
+	#email-input {
+	    width: 335px;
+	}
+
+	#phone-number-input {
+	    width: 335px;
+	}
+
+	#city-input {
+	    width: 335px;
+	}
     }
 
     //
@@ -289,6 +327,26 @@
 
 	.about-item:not(:first-child) {
 	    margin-left: 20px;
+	}
+
+	//
+	// Contact
+	//
+
+	#name-input {
+	    width: 455px;
+	}
+
+	#email-input {
+	    width: 455px;
+	}
+
+	#phone-number-input {
+	    width: 455px;
+	}
+
+	#city-input {
+	    width: 455px;
 	}
     }
 }
