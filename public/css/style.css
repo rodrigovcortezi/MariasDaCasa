@@ -276,13 +276,14 @@ button.button-primary {
 }
 
 .index-page section {
-  padding-top: 50px;
+  padding-top: 80px;
 }
 .index-page .section-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
+  font-size: 1.2em;
 }
 .index-page .section-title h2 {
   text-align: center;
