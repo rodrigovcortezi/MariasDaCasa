@@ -36,7 +36,7 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	margin-top: $nav-height;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../images/apartment.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/apartment.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -52,7 +52,8 @@
     }
 
     .hero-main p {
-	margin-top: 10px;
+	margin-top: 5px;
+	font-weight: bold;
 	color: $global-secondary-color;
     }
 
@@ -184,7 +185,11 @@
 	}
 
 	.hero-main h1 {
-	    font-size: 1.5rem;
+	    font-size: 2.3rem;
+	}
+
+	.hero-main p {
+	    font-size: 1rem;
 	}
 
 	.hero-bottom {
@@ -244,6 +249,10 @@
 	    font-size: 2.5rem;
 	}
 
+	.hero-main p {
+	    font-size: 1.1rem;
+	}
+
 	.hero-bottom select {
 	    margin-right: 5px;
 	    width: 272px;
@@ -301,7 +310,11 @@
 	}
 
 	.hero-main h1 {
-	    font-size: 2.5rem;
+	    font-size: 3.2rem;
+	}
+
+	.hero-main p {
+	    font-size: 1.2rem;
 	}
 
 	.hero-bottom {
