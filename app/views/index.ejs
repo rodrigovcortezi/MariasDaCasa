@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Marias da Casa</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<script src="javascripts/nav.js" defer></script>
+    </head>
+    <body>
+	<header class="nav-container">
+	    <nav>
+		<div class="nav-controls">
+		    <a id="menu-icon" href="#"><img src="icons/menu.svg" width="25"></a>
+		    <a id="logo" href="#">logo</a>
+		</div>
+		<div class="horizontal-separator"></div>
+		<ul>
+		    <li><a href="#">Marias da Casa</a></li>
+		    <li><a href="#">Seja uma Parceira</a></li>
+		    <li><a href="#">Contato</a></li>
+		</ul>
+	    </nav>
+	</header>
+	<main class="index-page">
+	    <section class="hero">
+		<div class="container hero-main">
+		    <h1>Encontre uma Maria da Casa</h1>
+		    <p>Profissionais diaristas no ramo resindencial.</p>
+		</div>
+		<div class="hero-bottom">
+		    <div class="container hero-bottom-container">
+			<select>
+			    <option disabled selected hidden>Serviço</option>
+			    <option>Personal Organizer</option>
+			    <option>Faxineira</option>
+			    <option>Cozinheira</option>
+			    <option>Passadeira</option>
+			    <option>Cuidadora de Idosos</option>
+			    <option>Cuidadora de Crianças</option>
+			</select>
+			<select>
+			    <option disabled selected hidden>Cidade</option>
+			    <option>Rio de Janeiro</option>
+			    <option>São Paulo</option>
+			    <option>Minas Gerais</option>
+			    <option>Santa Catarina</option>
+			</select>
+			<button class="button-primary">Procurar</button>
+		    </div>
+		</div>
+	    </section>
+	    <section class="about">
+		<div class="container">
+		    <div class="section-title">
+			<h2>Quem Somos</h2>
+			<div class="title-border"></div>
+		    </div>
+		    <div class="about-table">
+			<div class="about-item">
+			    <div id="quality-card" class="circle"></div>
+			    <p>
+				O <strong>Marias da Casa</strong> é o lugar certo para quem procura serviços residenciais de 
+				qualidade.
+			    </p>
+			</div>
+			<div class="about-item">
+			    <div id="staff-card" class="circle"></div>
+			    <p>
+				Nossa equipe é formada por pessoas altamente capacitadas e treinadas.
+			    </p>
+			</div>
+			<div class="about-item">
+			    <div id="contact-card" class="circle"></div>
+			    <p>
+				Entre em contato com a Maria da Casa mais próxima de você.
+			    </p>
+			</div>
+		    </div>
+		</div>
+	    </section>
+	    <section class="services">
+		<div class="container">
+		    <div class="section-title">
+			<h2>Serviços</h2>
+			<div class="title-border"></div>
+		    </div>
+		    <div class="service-menu">
+			<div class="service-item">
+			    <img src="icons/personal-organizer.svg" width="50">
+			    Personal Organizer
+			</div>
+			<div class="service-item">
+			    <img src="icons/cleaner.svg" width="50">
+			    Faxineira
+			</div>
+			<div id="cozinheira-item" class="service-item">
+			    <img src="icons/chef.svg" width="50">
+			    Cozinheira
+			</div>
+			<div class="service-item">
+			    <img src="icons/iron.svg" width="50">
+			    Passadeira
+			</div>
+			<div class="service-item">
+			    <img src="icons/old-man.svg" width="50">
+			    Cuidadora de Idosos
+			</div>
+			<div class="service-item">
+			    <img src="icons/children.svg" width="50">
+			    Cuidadora de Criaças
+			</div>
+		    </div>
+		</div>
+	    </section>
+	    <section class="contact">
+		<div class="container">
+		    <div class="section-title">
+			<h2>Contato</h2>
+			<div class="title-border"></div>
+		    </div>
+		    <form class="contact-form">
+			<input id="name-input" class="form-component "type="text" name="name" placeholder="Nome">
+			<input id="email-input" class="form-component" type="text" name="email" placeholder="Email">
+			<input id="phone-number-input" class="form-component "type="text" name="phone-number" placeholder="Telefone">
+			<input id="city-input" class="form-component" type="text" name="city" placeholder="Cidade">
+			<input id="subject-input" class="form-component" type="text" name="subject" placeholder="Assunto">
+			<textarea name="message" class="form-component" placeholder="Mensagem"></textarea>
+			<button class="form-component button-primary">Enviar</button>
+		    </form>
+		</div>
+	    </section>
+	    <footer>
+	    </footer>
+	</main>
+    </body>
+</html>
